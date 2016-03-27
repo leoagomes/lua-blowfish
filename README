@@ -25,21 +25,22 @@ BUILDING:
 This is atm using lua5.1 library. It should* work with newer versions.
 It expects lua's headers to be in a folder called "lua5.1".
 
-I could be using luarocks and everything would be handled by it and
-everything would work properly and life would be beautiful.
-But neither do I care nor do I know how to use that, so, just "make"
-and move whatever's on ./build to lua library binary folder.
+There are two ways of building lua-blowfish.
 
-I also don't care enough about windows even to remember it doesn't really
-have make support. So yeah, there's that. Luarocks would probably compile
-everything properly.
+1) make
+	This is cool if you're on linux and don't really want to install
+	to some common directory, just want to build the shared object.
 
-Really, tho, why are you even using Windows?
+	I wrote it in a linux only fashion, because I was using linux
+	and I am really no make god, so I didn't want to spend a lot of
+	time learning it.
 
-Anyway, if you do know how luarocks works, please do send a pull request
-with that rockspeck thingamajig.
+2) luarocks
+	LuaRocks should be able to compile this in every major OS, I am not
+	sure, though. It worked on more than one linux distro and a Mac.
 
-oh, yeah, and btw, I assume you're using gcc... should work with clang, tho.
+If you're having problems and you're using some UNIX based OS, then
+ask for help. If you're using Windows, just die. Or give up (on win).
 
 CONTRIBUTING:
 
